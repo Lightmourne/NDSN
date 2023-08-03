@@ -79,6 +79,8 @@ while True:
                 print('urllib3.exceptions.NewConnectionError')
             except urllib3.exceptions.MaxRetryError:
                 print('urllib3.exceptions.MaxRetryError')
+            except OSError:
+                print('Check your Network connection', ':', message)
                 
         elif i[5] == "up" and i[4] not in active_ips:
             active_ips.append(i[4])
@@ -104,5 +106,7 @@ while True:
                  print('urllib3.exceptions.NewConnectionError')
             except urllib3.exceptions.MaxRetryError:
                 print('urllib3.exceptions.MaxRetryError')
+            except OSError:
+                print('Check your Network connection', ':', message)
 
     time.sleep(10)  # delay between device pings, it allows you to keep the network load down
