@@ -5,7 +5,7 @@ NDSN is an application designed to monitor the status of devices on the network.
 ## ? How it works
 
 1. You need to create a Telegram Bot. Link to official Telegram documentation [How Do I Create a Bot?](https://core.telegram.org/bots#how-do-i-create-a-bot).
-In the [main.py](https://github.com/Lightmourne/NDSN/blob/master/main.py) you need to insert your unique telegram bot token (line 20) and your chat id (line 21).
+In the [main.py](https://github.com/Lightmourne/NDSN/blob/master/main.py) you need to insert your unique telegram bot token (line 14) and your chat id (line 15).
 This is necessary for the application to be able to send a message to the Telegram bot and this message will be displayed only to the unique user with the specified chat id.
 
 2. You need to make changes to the [devices.py](https://github.com/Lightmourne/NDSN/blob/master/devices.py). This file consists of a dictionary whose key is the device's IP address and whose value is another dictionary that contains information about the device's name and location.
