@@ -29,7 +29,17 @@ Now the [ping_log.csv](https://github.com/Lightmourne/NDSN/blob/main/ping_log.cs
 
 ![logs](https://github.com/Lightmourne/NDSN/blob/main/img/log.png)
 
+## What's New
+### 2023-08-05 Added the option to visualize logs as an html document.
+By default, events for the last 5 days from the current date are displayed. You can specify your own value "days", to do this you need to execute:
+```bash
+    python3 log_list_to_html.py --days=n
+```
+>Where n - is the count of days from the current date for which you want to receive the report.
 
+Example:
+
+![log_list_to_html.png](https://github.com/Lightmourne/NDSN/blob/main/img/log_list_to_html.png)
 
 
 
